@@ -1,0 +1,54 @@
+body {
+    background-color: rgb(241, 236, 155);
+}
+
+h3 {
+    color: blueviolet;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 10px solid blueviolet;
+}
+
+/* comentário CSS (atalho: CTRL + :)*/
+
+/* classes (elementos que vão se repetir*/
+.paragraph {
+    background-color: rgb(192, 0, 0);
+    color: aliceblue;
+    padding: 20px;
+}
+
+/* id (elementos únicos) */
+#paragrafo_unico {
+    background-color: aliceblue;
+    color: black;
+    padding: 50px;
+}
+
+/* testando cores */
+.color-name {
+    color: crimson;
+    background-color: rgb(0, 0, 0);
+    padding: 50px;
+}
+
+/* HEX (abordagem de cor mais utilizada) */
+.color-HEX {
+    color: #000;
+    padding: 10px;
+    background-color: #55a398;
+}
+
+/* RGBA (controla a transparência)*/
+.rgba {
+    background-color: rgb(240, 248, 255, 0.3);
+    color: black;
+    padding: 50px;
+}
+
+#home{
+    background-color: rgb(240, 248, 255, 0.6);
+    padding: 10px;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+}

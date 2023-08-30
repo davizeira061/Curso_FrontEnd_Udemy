@@ -1,0 +1,12 @@
+ul{
+    border: 2px solid red;
+    padding: 10px;
+}
+
+li{
+    list-style: none;
+    background-color: blueviolet;
+    color: aliceblue;
+    font-size: 30px;
+    padding: 1%;
+}
