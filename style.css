@@ -46,9 +46,10 @@ h3 {
 }
 
 #home{
-    background-color: rgb(240, 248, 255, 0.6);
+    background-color: rgb(240, 248, 255);
     padding: 10px;
     text-decoration: none;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 50px;
+    opacity: 0.6;
 }
