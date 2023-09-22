@@ -10,10 +10,10 @@
 
 <body>
     <div class="container">
-        <header>
-            <h3>Venda seu computador de forma segura com total segurança!</h3>
+        <header class="header">
+            <h3>Venda seu computador de forma rápida com total segurança!</h3>
         </header>
-        <form action="register.php" method="post">
+        <div class="form-container">
             <div class="form-header">
                 <h3>FORMULÁRIO</h3>
             </div>
@@ -21,83 +21,144 @@
                 <h1 class="form-title">Monte seu anuncio!</h1>
                 <p>Descreva as peças, valores e tudo que possa facilitar a venda</p>
             </div>
-            <div class="box-input">
-                <div class="titulo">
-                    <label for="titulo">Título do anuncio <span class="required-field">*</span></label>
-                    <input type="text" name="titulo" id="title" class="block"
-                        placeholder="Um título para anunciar seu PC" minlength="1" maxlength="30" required>
+            <form action="register.php" method="post">
+                <div class="box-input">
+                    <div class="titulo">
+                        <label for="titulo">Título do anuncio: <span class="required-field">*</span></label><br>
+                        <input type="text" name="titulo" id="title" class="block"
+                            placeholder="Um título para anunciar seu PC" minlength="1" maxlength="30" required>
+                    </div>
                 </div>
-
-                <div class="preco">
-                    <label for="preco">Informe o preço do seu PC</label>
-                    <input type="number" name="preco" id="" placeholder="Defina o preço" required>
+                <div class="box-input">
+                    <div class="preco">
+                        <label for="preco">Informe o preço do seu PC:<span class="required-field">*</span></label><br>
+                        <input type="number" name="preco" id="" placeholder="Defina o preço" required>
+                    </div>
                 </div>
-
-                <div class="placa-mae">
-                    <label for="placa-mae">Informe a placa mãe do seu computador:</label>
-                    <input type="text" name="placa-mae" id="" placeholder="Modelo da placa mãe" required>
+                <div class="box-input">
+                    <div class="placa-mae">
+                        <label for="placa-mae">Informe a placa mãe do seu computador:<span
+                                class="required-field">*</span></label><br>
+                        <input type="text" name="placa-mae" id="" placeholder="Modelo da placa mãe" required>
+                    </div>
                 </div>
-
-                <div class="processador">
-                    <label for="processador">Informe o processador do seu computador:</label>
-                    <input type="text" name="processador" id="" placeholder="Modelo do processador" required>
+                <div class="box-input">
+                    <div class="processador">
+                        <label for="processador">Informe o processador do seu computador:<span
+                                class="required-field">*</span></label><br>
+                        <input type="text" name="processador" id="" placeholder="Modelo do processador" required>
+                    </div>
                 </div>
-
-                <div class="placa-de-video">
-                    <label for="placa-de-video">Informe a placa de vídeo do seu computador:</label>
-                    <input type="text" name="placa-de-video" id="" placeholder="Modelo da placa de vídeo" required>
+                <div class="box-input">
+                    <div class="box-input">
+                        <div class="placa-de-video">
+                            <label for="placa-de-video">Informe a placa de vídeo do seu computador:<span
+                                    class="required-field">*</span></label><br>
+                            <input type="text" name="placa-de-video" id="" placeholder="Modelo da placa de vídeo"
+                                required>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="memoria-ram">
-                    <label for="memoria-ram">Informe a quantidade de memoria RAM do seu computador:</label>
-                    <input type="number" name="memoria-ram" id="" placeholder="Quantidade em GB" required>
-                    <label for="memoria-ram">Quantos pentes de memória RAM?</label>
+                <div class="box-input">
+                    <div class="memoria-ram">
+                        <label for="memoria-ram">Informe a quantidade de memoria RAM do seu computador:<span
+                                class="required-field">*</span></label><br>
+                        <input type="number" name="memoria-ram" id="" placeholder="Quantidade em GB" required>
+                    </div>
+                    <div class="box-input">
+                    </div>
+                    <label for="memoria-ram">Quantos pentes de memória RAM?<span class="required-field">*</span></label>
                     <div class="radio">
-                        <input type="radio" value="1" name="memoria-ram" id="">
-                        <label for="1">1</label>
-                        <input type="radio" value="2" name="memoria-ram" id="">
-                        <label for="2">2</label>
-                        <input type="radio" value="3" name="memoria-ram" id="">
-                        <label for="3">3</label>
-                        <input type="radio" value="4" name="memoria-ram" id="">
-                        <label for="4">4</label>
+                        <ul>
+                            <li>
+                                <input type="radio" value="1" name="memoria-ram" required id="">
+                                <label for="1">1</label>
+                            </li>
+                            <li>
+                                <input type="radio" value="2" name="memoria-ram" required id="">
+                                <label for="2">2</label>
+                            </li>
+                            <li>
+                                <input type="radio" value="3" name="memoria-ram" required id="">
+                                <label for="3">3</label>
+                            </li>
+                            <li>
+                                <input type="radio" value="4" name="memoria-ram" required id="">
+                                <label for="4">4</label>
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
-                <div>
-                    <label for="descricao">Descreva um pouco sobre o computador:</label>
-                    <textarea name="descricao" id="" cols="30" rows="10"
-                        placeholder="Aqui você deve descrever um pouco de detalhes do seu computador para o futuro comprador... "
-                        required></textarea>
+                <div class="box-input">
+                    <div>
+                        <label for="descricao">Descreva um pouco sobre o computador:<span
+                                class="required-field">*</span></label>
+                        <textarea name="descricao" id="msg" class="block"
+                            placeholder="Aqui você deve descrever um pouco de detalhes do seu computador para o futuro comprador... " 
+                            required></textarea>
+                    </div>
                 </div>
 
-                <div class="radio">
-                    <label for="acessorios">Alguns acessórios opcionais:</label><br>
-                    <input type="checkbox" name="teclado" id="">
-                    <label for="teclado">Teclado</label>
-                    <input type="checkbox" name="mouse" id="">
-                    <label for="mouse">Mouse</label>
-                    <input type="checkbox" name="monitor" id="">
-                    <label for="monitor">Monitor</label>
-                    <input type="checkbox" name="headset" id="">
-                    <label for="headset">Headset</label>
+                <div class="box-input">
+                    <div class="radio">
+                        <div class="optional-box">
+                            <ul>
+                                <label for="acessorios">Alguns acessórios opcionais:</label><br><br>
+                                <li>
+                                    <input type="checkbox" name="teclado" id="">
+                                    <label for="teclado">Teclado</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="mouse" id="">
+                                    <label for="mouse">Mouse</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="monitor" id="">
+                                    <label for="monitor">Monitor</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="headset" id="">
+                                    <label for="headset">Headset</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="cabo-de-forca" id="">
+                                    <label for="cabo-de-forca">Cabo de força</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-
-                <div>
-                    <label for="tempo-de-uso">Informe quando comprou seu computador:</label>
-                    <input type="date" name="tempo-de-uso" id="">
-                </div>
+                
+                <div class="box-input">
+                    <div>
+                        <label for="tempo-de-uso">Informe quando comprou seu computador:<span
+                            class="required-field">*</span></label><br>
+                            <input type="date" name="tempo-de-uso" id="">
+                        </div>
+                    </div>
+                    
+                    <div class="box-input">
+                        <p>Fotos do computador: <span class="required-field">*</span></p>
+                        <input type="file" multiple accept="image/png, image/jpg" name="images" id="images" required>
+                    </div>
 
                 <footer>
-                    <div>
-                        <input type="reset" value="Limpar" name="" id="">
+                    <div class="box-input">
+                        <div>
+                            <input type="reset" value="Limpar" class="btn-submit" name="" id="botoes">
+                        </div>
                     </div>
-                    <div>
-                        <input type="submit" value="Enviar" name="enviar" id="">
+
+                    <div class="box-input">
+                        <div>
+                            <input type="submit" value="Enviar" name="enviar" class="btn-submit" id="botoes">
+                        </div>
                     </div>
                 </footer>
-            </div>
-        </form>
+        </div>
+    </div>
+    </form>
     </div>
 </body>
 
