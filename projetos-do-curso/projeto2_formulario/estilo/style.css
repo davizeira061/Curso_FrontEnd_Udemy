@@ -32,11 +32,12 @@ input[type="file"] {
     text-align: center;
     height: 160px;
     padding: 20px;
-    background-color: rgb(103, 58, 183);
+    background-color: rgb(183, 58, 58);
+    background-image: url();
 }
 
 .container {
-    background-color: rgb(103, 58, 183, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .header h3 {
@@ -51,6 +52,7 @@ input[type="file"] {
     margin: 0 auto;
     position: relative;
     top: -45px;
+    border: 2px solid #b73a3a;
 }
 
 form {
@@ -63,8 +65,8 @@ form {
 }
 
 .form-header h3 {
-    color: #673ab7;
-    border-bottom: 2px solid #673ab7;
+    color: #b73a3a;
+    border-bottom: 2px solid #b73a3a;
     width: 150px;
     text-align: center;
     margin: 0 auto;
@@ -106,7 +108,7 @@ form {
 }
 
 .btn-submit {
-    background-color: #673ab7;
+    background-color: #b73a3a;
     color: #fff;
     border: 2px solid transparent;
     width: 150px;
@@ -120,8 +122,8 @@ form {
 /* inverter cores */
 .btn-submit:hover {
     background-color: #fff;
-    border-color: #673ab7;
-    color: #673ab7;
+    border-color: #b73a3a;
+    color: #b73a3a;
 }
 
 footer {
