@@ -1,26 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Semântico</title>
 </head>
+
 <body>
-    <!-- 1 - section -->
-    <section>
-        <h2>Veja nossos produtos</h2>
-        <p>Produto 1</p>
-        <p>Produto 2</p>
-        <p>Produto 3</p>
-    </section>
+    <!-- 3 - header -->
+    <header>
+        <h2>Nosso site</h2>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Produto</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
 
-    <section>
-        <h2>Diferenciais</h2>
-        <p>Diferencial 1</p>
-        <p>Diferencial 2</p>
-        <p>Diferencial 3</p>
-    </section>
+        <!-- 5 - nav -->
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Produtos</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
 
-    <!-- 2 - aticle -->
+    <!-- 8 - main -->
+    <main>
+
+        <!-- 1 - section -->
+        <section>
+            <h2>Veja nossos produtos</h2>
+            <p>Produto 1</p>
+            <p>Produto 2</p>
+            <p>Produto 3</p>
+        </section>
+
+        <section>
+            <h2>Diferenciais</h2>
+            <p>Diferencial 1</p>
+            <p>Diferencial 2</p>
+            <p>Diferencial 3</p>
+        </section>
+
+        <!-- 2 - aticle -->
+        <section>
+            <h2>Ultimos postes do blog</h2>
+            <article>
+                <h3>Post sobre algo 1:</h3>
+                <p>Descrição do post 1</p>
+                <a href="#">Ler conteúdo</a>
+            </article>
+            <article>
+                <h3>Post sobre algo 2:</h3>
+                <p>Descrição do post 2</p>
+                <a href="#">Ler conteúdo</a>
+            </article>
+            <article>
+                <h3>Post sobre algo 3:</h3>
+                <p>Descrição do post 3</p>
+                <a href="#">Ler conteúdo</a>
+            </article>
+        </section>
+    </main>
+
+    <!-- 6 - aside -->
+    <aside>
+        <h4>Categorias</h4>
+        <ul>
+            <li><a href="#">JavaScript</a></li>
+            <li><a href="#">React</a></li>
+            <li><a href="#">Node</a></li>
+        </ul>
+    </aside>
+
+    <!-- 9 - mark -->
+    <p>Temos nesse texto um <mark>conteúdo importante</mark>, que precisa der marcado</p>
+
+    <!-- 7 - figure - figcaption -->
+    <figure>
+        <img src="https://danieldigital.com.br/wp-content/uploads/2019/06/html5-tags-semanticas-estrutura-site-seo.jpg"
+            alt="html semantico">
+        <figcaption>HTML Semântico</figcaption>
+    </figure>
+
+    <!-- style -->
+    <style>
+        img {
+            width: 80%;
+        }
+    </style>
+
+
+    <!-- 4 - footer -->
+    <footer>
+        <div>
+            <h2>Entre em contato</h2>
+            <p>Telefone(XX) XXXXX-XXXX</p>
+            <p>Email: ...................</p>
+        </div>
+        <p>Criado por XX - 2022</p>
+    </footer>
 </body>
+
 </html>
