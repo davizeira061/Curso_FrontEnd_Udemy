@@ -88,3 +88,13 @@ console.log(null === undefined);
 console.log(null == false);
 console.log(undefined == false);
 
+// 13 - Mudança de tipos
+console.log(5*null);
+
+console.log('Teste' * 'opa');
+
+console.log('10' + 1);
+
+console.log('10' - 1);
+
+
