@@ -111,12 +111,12 @@ if(userName === "Diogo") {
 
 // 10 - While
 
-let p = 0;
+// let p = 0;
 
-while(p<5) {
-    console.log(`Repetindo ${p}`);
-    p = p+1;
-}
+// while(p<5) {
+//     console.log(`Repetindo ${p}`);
+//     p = p+1;
+// }
 
 // Loop infinito
 // let x=10
@@ -124,4 +124,82 @@ while(p<5) {
 // while(x > 5) {
 //     console.log(`Imprimindo ${x}`)
 // }
+
+// 11 - do while
+// let o = 10;
+
+// do {
+//     console.log (`Valor de o: ${o}`);
+//     o--
+// }   while (o > 0);
+
+// 12 - for
+for(let t = 0; t < 10; t++) {
+    console.log(`Repetindo algo...`);
+}
+
+let r = 10
+
+for (r; r > 0; r = r - 1) {
+    console.log (`O r está diminuindo`)
+}
+
+// 14 - break
+for(let g = 20; g > 10; g--) {
+    console.log (`O valor de g é: ${g}`);
+
+    if (g === 12) {
+        console.log(`O g é 12!`);
+        break;
+    }
+}
+
+// 15 - continue
+for (let s = 0; s < 10; s = s + 1) {
+    // operador resto = %
+    if(s % 2 === 0) {
+        console.log(`Número par!`);
+        continue;
+    }
+    console.log(s);
+}
+
+// 16 - switch
+const job = "Programador";
+
+switch(job) {
+    case "Programador":
+        console.log("Você é um programador!")
+        break;
+    case "Advogado":
+        console.log("Você é um advogado!")
+        break;
+    case "Engenheiro":
+        console.log("Você é um engenheiro!")
+        break;
+    default:
+        console.log("Profissão não encontrada")
+}
+
+// switch "errado"
+const l = 100;
+
+switch (l) {
+    case 200:
+        console.log("L é 200!");
+    case 100:
+        console.log("L é 100!");
+        break;
+    case 20:
+        console.log("L é 20!");
+    case 10:
+        console.log("L é 10!");
+}
+
+
+
+
+
+
+
 
