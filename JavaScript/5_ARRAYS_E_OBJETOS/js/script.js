@@ -139,7 +139,33 @@ letters.unshift("z");
 
 console.log(letters);
 
+// 13 - indexOf e lastIndexOf
+const myElements = ["Morango", "Maçã", "Abacate", "Pêra", "Abacate"]
 
+console.log(myElements.indexOf("Maçã"));
+console.log(myElements.indexOf("Abacate"));
 
+console.log(myElements[2]);
+console.log(myElements[myElements.lastIndexOf("Abacate")]);
 
+console.log(myElements.lastIndexOf("Abacate"));
 
+console.log(myElements.lastIndexOf("Mamão"));
+console.log(myElements.indexOf("Mamão"));
+
+// 14 - Slice
+const testeSlice = ["a", "b", "c", "d", "e", "f"]
+
+const subArray = testeSlice.slice(2, 4);
+
+console.log(subArray)
+console.log(testeSlice)
+
+// 15 - ForEach
+const nums = [1, 2, 3, 4, 5];
+
+nums.forEach((numero) => {
+    console.log(`O número é ${numero}`);
+});
+
+// 16 - Includes
