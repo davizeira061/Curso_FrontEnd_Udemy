@@ -169,3 +169,21 @@ nums.forEach((numero) => {
 });
 
 // 16 - Includes
+const brands = ["BMW", "VW", "FIAT"];
+
+console.log(brands.includes("FIAT"))
+
+// 17 - Reverse
+const reverseTeste = [1, 2, 3, 4, 5];
+
+reverseTeste.reverse();
+
+console.log(reverseTeste);
+
+// 18 - Trim
+
+
+
+
+
+
