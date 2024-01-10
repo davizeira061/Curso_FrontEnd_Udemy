@@ -278,10 +278,8 @@ console.log(myJson)
 
 const myObject = JSON.parse(myJson);
 console.log(myObject);
-console.log(myObject);
-
-
-
+console.log(myObject.name);
+console.log(typeof myObject);
 
 
 
