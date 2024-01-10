@@ -218,6 +218,80 @@ console.log(fraseDeCompra);
 const palavra = "Testando ";
 console.log(palavra.repeat(4));
 
+// 23 - rest operator
+
+const somaInfinita = (...args) => {
+
+    let total = 0 
+
+    for(let i = 0; i < args.length; i++){
+        total += args [i];
+    }
+
+    return total;
+}
+
+console.log(somaInfinita(1, 2, 3));
+console.log(somaInfinita(1, 20, 34));
+
+// 24 - for of
+const somaInfinita2 = (...args) => {
+    
+    let total = 0;
+    
+    for(num of args){
+        total += num;
+    }
+    
+    return total;
+};
+
+console.log(somaInfinita2(1, 20, 34));
+
+// 25 - Destructuring
+const userDetails = {
+    firstName: "Davi",
+    lastName: "Cavalcante",
+    job: "Estudante"
+}
+
+const {firstName, lastName, job} = userDetails;
+
+console.log(userDetails)
+console.log(firstName, lastName, job)
+
+// 26 - destructuring com arrays
+const myList = ["Avião", "Submarino", "Carro"];
+
+const [veiculoA, veiculoB, veiculoC] = myList;
+
+console.log(myList);
+console.log(veiculoA, veiculoB, veiculoC);
+
+// 27 - JSON 
+const myJson = 
+    '{"name": "Davi", "age": 23, "skills": ["HTML", "CSS"]}';
+
+console.log(myJson)
+
+// JSON para objeto e objeto para JSON
+
+const myObject = JSON.parse(myJson);
+console.log(myObject);
+console.log(myObject);
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
