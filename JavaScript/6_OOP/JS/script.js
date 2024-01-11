@@ -33,6 +33,16 @@ const text = "asd";
 
 console.log(Object.getPrototypeOf(text));
 
+// 4 - mais sobre prototype
+const myObject = {
+    a: "b",
+};
+
+console.log(Object.getPrototypeOf(myObject));
+console.log(Object.getPrototypeOf(myObject) === Object.prototype);
+
+const mySecondObject = Object.create(myObject);
+console.log(mySecondObject);
 
 
 
