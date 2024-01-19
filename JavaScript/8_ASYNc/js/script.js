@@ -36,6 +36,78 @@ Promise.resolve(4 * "asd")
     })
     .catch((err) => console.log(`Um erro ocorreu: ${err}`));
 
+// 5 - rejeição
+function checkNumber(n) {
+    return new Promise((resolve, reject) => {
+        if (n > 10) {
+            resolve(`O número é maior que 10`);
+        } else {
+            reject(new Error("Número muito baixo"));
+        }
+    });
+}
+
+const a = checkNumber(40);
+const b = checkNumber(6);
+
+a.then((v) => console.log (`O resultado é ${v}`)).catch((err) =>
+    console.log(`Um erro ocorreeu: ${err}`)
+);
+
+b.then((v) => console.log (`O resultado é ${v}`)).catch((err) =>
+    console.log(`Um erro ocorreeu: ${err}`)
+);
+
+// 6 - Async functions
+async function somarComDelay(a, b) {
+    return a + b;
+}
+
+somarComDelay(2, 4).then((value) => {
+    console.log(`O valor da soma é: ${value}`)
+});
+
+console.log("teste async");
+
+// 7 - async await
+function resolveComDelay() {
+    return new Promise(resolve => {
+        setTimeout(() => {
+        resolve("Resolveu a Promise");
+    }, 2000);
+    });
+}
+
+async function chamadaAsync() {
+    console.log('Chamando a Promise e esperando o resultado');
+    const result = await resolveComDelay();
+    console.log(`O resultado chegou: ${result}`);
+}
+
+chamadaAsync();
+
+// 8 - generators
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
