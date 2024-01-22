@@ -4,5 +4,10 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
-    background-color: aliceblue;
+    background-color: rgba(0, 136, 255, 0.5);
+}
+
+p {
+    border-color: red;
+    border: 10px;
 }
