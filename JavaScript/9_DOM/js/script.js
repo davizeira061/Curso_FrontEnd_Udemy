@@ -8,7 +8,7 @@
 // console.log(document.body.childNodes[1].childNodes[1].textContent);
 
 // // 2 - selecionando por tag
-// const listItens = document.getElementsByTagName("li");
+const listItens = document.getElementsByTagName("li");
 
 // console.log(listItens);
 
@@ -26,7 +26,7 @@ console.log(products);
 
 // console.log(productsQuery)
 
-// const mainContainer = document.querySelector("#main-container");
+const mainContainer = document.querySelector("#main-container");
 // console.log(mainContainer);
 
 // // 6 - insertBefore
@@ -76,10 +76,17 @@ console.log(products);
 
 // 12 - posição do elemento
 const product1 = products[0];
+console.log(product1.getBoundingClientRect());
 
-console.log(product1.getBoudingClientRect());
+// 13 - CSS com JS
+mainContainer.style.color = "white";
+mainContainer.style.backgroundColor = "green";
+mainContainer.style.padding = "30px";
 
-
+// 14 - alterando estilos de varios elementos
+for(const li of listItens) {
+    li.style.backgroundColor = "gray";
+}
 
 
 
